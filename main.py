@@ -1,3 +1,5 @@
+"""[Planilha usada]: https://docs.google.com/spreadsheets/d/16nPlekD-4OxVTpxkDUhkfB-qijLsgeBwNVsOjZGRvfU/edit?usp=sharing
+"""
 import csv
 
 from avl import No
@@ -17,15 +19,11 @@ if __name__ == "__main__":
 
             if distancia == 0:
                 capital_origem = str(linha[0])
-                # print(f"{capital_origem} - {capital_destino} - {distancia}Km")
 
                 voo = Voo(capital_origem, capital_destino, distancia)
                 arvore.data = voo
             else:
-                # print(f"{capital_origem} - {capital_destino} - {distancia}Km")
                 voo = Voo(capital_origem, capital_destino, distancia)
                 arvore.insere(voo)
 
-        arvore.imprime_arvore()
-        arvore.rotacao_esquerda()
         arvore.imprime_arvore()

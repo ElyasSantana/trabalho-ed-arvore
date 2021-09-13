@@ -1,14 +1,6 @@
-#!/usr/bin/env python2
-# -*- coding: utf-8 -*-
 """
     Árvore AVL em Python
 
-    Copyright (c) 2009 Vindemiatrix Almuredin.
-    É dada permissão para copiar, distribuir e/ou modificar este documento
-    sob os termos da Licença de Documentação FAIL,
-    Versão 97.545.668.112.666.002 Build 69 Release 42;
-    Uma cópia da licença talvez esteja inclusa na seção entitulada
-    "Licença de Documentação FAIL".
 """
 
 from voo import Voo
@@ -95,17 +87,17 @@ class No:
             self.direita.imprime_arvore(indent + 2)
 
 
-if __name__ == "__main__":
-    voo1 = Voo("Aracaju", "Joao Pessoa", 1234)
-    n1 = No(voo1)
-
-    voo2 = Voo("Aracaju", "Recife", 687)
-    n1.insere(voo2)
-
-    voo3 = Voo("Aracaju", "São Paulo", 2090)
-    n1.insere(voo3)
-
-    voo4 = Voo("Aracaju", "Goiás", 1200)
-    n1.insere(voo4)
-
-    n1.imprime_arvore()
+# if __name__ == "__main__":
+#     voo1 = Voo("Aracaju", "Joao Pessoa", 1234)
+#     n1 = No(voo1)
+#
+#     voo2 = Voo("Aracaju", "Recife", 687)
+#     n1.insere(voo2)
+#
+#     voo3 = Voo("Aracaju", "São Paulo", 2090)
+#     n1.insere(voo3)
+#
+#     voo4 = Voo("Aracaju", "Goiás", 1200)
+#     n1.insere(voo4)
+#
+#     n1.imprime_arvore()
